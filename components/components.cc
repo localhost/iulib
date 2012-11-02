@@ -22,7 +22,12 @@
 // Primary Repository:
 // Web Sites: www.iupr.org, www.dfki.de
 
+#ifdef __APPLE__
+#include <crt_externs.h>
+#define environ (*_NSGetEnviron())
+#else
 #include <unistd.h>
+#endif
 #include "colib/colib.h"
 #include "iulib.h"
 #include "components.h"
