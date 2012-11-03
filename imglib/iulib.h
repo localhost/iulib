@@ -27,10 +27,10 @@
 #ifndef iulib_h__
 #define iulib_h__
 #include "colib/colib.h"
-#include "bithacks.h"
-#include "imgbitptr.h"
-#include "imgbits.h"
-#include "imgrle.h"
+#include "imgbits/bithacks.h"
+#include "imgbits/imgbitptr.h"
+#include "imgbits/imgbits.h"
+#include "imgbits/imgrle.h"
 #include "autoinvert.h"
 #include "imgio.h"
 #include "io_jpeg.h"
@@ -50,6 +50,6 @@
 #include "imgrescale.h"
 #include "imgthin.h"
 #include "imgtrace.h"
-#include "dgraphics.h"
-#include "vidio.h"
+#include "utils/dgraphics.h"
+#include "vidio/vidio.h"
 #endif
