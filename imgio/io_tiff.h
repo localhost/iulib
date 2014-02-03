@@ -28,8 +28,11 @@
 
 #include "colib/colib.h"
 #include "iulib.h"
+
+namespace {
 #include "tiff.h"
 #include "tiffio.h"
+}
 
 namespace iulib {
     using namespace colib;
