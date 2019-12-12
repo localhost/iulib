@@ -36,7 +36,7 @@ namespace iulib {
     }
 
     bool is_png(FILE *in) {
-        char magic[] = {137, 80, 78, 71, 13, 10, 26, 10};
+        unsigned char magic[] = {137, 80, 78, 71, 13, 10, 26, 10};
         char buf[sizeof(magic)];
         if(fread(buf, 1, sizeof(buf), in)!=sizeof(buf))
 	    buf[0] = 0;
